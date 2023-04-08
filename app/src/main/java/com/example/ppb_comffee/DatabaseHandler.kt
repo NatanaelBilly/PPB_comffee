@@ -23,4 +23,3 @@ class DatabaseHandler {
         return con
     }
 }
-}
