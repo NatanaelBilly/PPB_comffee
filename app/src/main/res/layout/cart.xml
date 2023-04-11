@@ -2,39 +2,59 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keranjang"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dikirim ke"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_item">
 
         <ImageView
             android:id="@+id/cartFnbPic"
-            android:layout_width="70dp"
-            android:layout_height="40dp"/>
-<!--            android:src="@drawable/"/>-->
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/kopi"/>
 
         <TextView
             android:id="@+id/item_nama"
-            android:paddingLeft="10dp"
+            android:paddingLeft="100dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kopi arabica"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 <!--        android:layout_toRightOf="@+id/item_pic"-->
         <TextView
             android:id="@+id/item_price"
-            android:paddingLeft="10dp"
+            android:paddingLeft="100dp"
+            android:paddingTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="20000" />
+            android:text="Rp. 20000"
+            android:textColor="@color/white"/>
         <TextView
             android:id="@+id/item_quantity"
-            android:paddingLeft="10dp"
+            android:paddingLeft="130dp"
+            android:paddingTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5" />
+            android:text="5"
+            android:textColor="@color/white"/>
 <!--        android:layout_alignBottom="@+id/cartFnbPic"-->
 <!--        android:layout_toRightOf="@+id/cartFnbPic"-->
 
@@ -66,5 +86,9 @@
 <!--            android:src="@drawable/substract_logo"-->
 <!--            android:layout_centerVertical="true" />-->
     </RelativeLayout>
-
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Total Harga"-->
+<!--        android:textColor="@color/white"/>-->
 </LinearLayout>
