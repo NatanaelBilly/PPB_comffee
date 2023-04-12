@@ -7,8 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.FragmentManager
-import com.example.ppb_comffee.ui.login.LoginFragment
-import java.util.Locale.Category
 
 class WelcomeFragment : Fragment(), View.OnClickListener {
     override fun onCreateView(
