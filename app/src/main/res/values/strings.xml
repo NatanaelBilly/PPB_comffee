@@ -17,6 +17,8 @@
     <string name="history">history</string>
     <string name="order">order</string>
 
+    <string name="username">Username</string>
+    <string name="address">This is your Address</string>
 
     //dummy barang
     <string-array name="item_name">
