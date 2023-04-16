@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e5c9ab"
-    tools:context=".HomeFragment"
+    tools:context=".HomePage"
     android:orientation="vertical">
 
     <TextView
@@ -37,7 +37,7 @@
         android:layout_gravity="center">
 
         <Button
-            android:id="@+id/profile"
+            android:id="@+id/btn_profile"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:background="@drawable/round_button"
@@ -48,7 +48,7 @@
             android:backgroundTint="#eeebe3"/>
 
         <Button
-            android:id="@+id/history"
+            android:id="@+id/btn_history"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:background="@drawable/round_button"
@@ -59,7 +59,7 @@
             android:backgroundTint="#eeebe3" />
 
         <Button
-            android:id="@+id/order"
+            android:id="@+id/btn_order"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:background="@drawable/round_button"

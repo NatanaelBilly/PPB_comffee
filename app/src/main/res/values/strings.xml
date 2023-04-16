@@ -19,6 +19,10 @@
     <color name="bg_color">#a87d32</color>
     <color name="bg_item">#543d14</color>
     <color name="bg_footer">#4f2b02</color>
+
+    <string name="username">Username</string>
+    <string name="address">This is your Address</string>
+
     //dummy barang
     <string-array name="item_name">
         <item>Biji Kopi Arabica</item>
