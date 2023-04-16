@@ -21,123 +21,60 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginTop="10dp">
 
+        <!-- Isi RelativeLayout -->
 
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp">
-
-<!--        <ImageView-->
-<!--            android:id="@+id/item_detail"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:src="List Item" />-->
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="List Item"
-            android:paddingLeft="5dp"
-            android:layout_centerVertical="true" />
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="125dp"
         android:layout_marginTop="10dp"
-        android:id="@+id/rvCartMenu"
-        tools:listitem="@layout/cart"
+        android:id="@+id/rvItemCart"
+        tools:listitem="@layout/item_cart"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"/>
-
-
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:background="@color/bg_footer"
         android:paddingLeft="40dp"
-        android:paddingRight="40dp">
-
+        android:paddingRight="40dp"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Harga"
-            android:textStyle="bold"
             android:textSize="20dp"
-            android:textColor="@color/white"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/bg_footer"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp">
-
+            android:id="@+id/total_harga"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:layout_alignParentStart="true"/>
+        <Button
+            android:id="@+id/cartPay"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_rounded_button"
+            android:text="Bayar"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/total_harga"
+            android:layout_toStartOf="@+id/cartTotal"
+            app:backgroundTint="@null"
+            android:textColor="@color/black"/>
         <TextView
             android:id="@+id/cartTotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/total_harga"
             android:text="Rp20.000,-"
-            android:textStyle="bold"
-            android:layout_marginTop="25dp"
             android:layout_marginBottom="10dp"
             android:textSize="20dp"
-            android:textColor="@color/white"/>
-        <Button
-            android:id="@+id/cartPay"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="200dp"
-            android:background="@drawable/white_rounded_button"
-            android:text="Bayar"
-            android:textColor="@color/black"
-            app:backgroundTint="@null" />
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"/>
     </RelativeLayout>
-    <!--    <TextView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="@string/cartOrderConfirm"-->
-    <!--        android:layout_marginTop="10dp"-->
-    <!--        android:gravity="center" />-->
-
-    <!--    <Button-->
-    <!--        android:id="@+id/cartOrder"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="40dp"-->
-    <!--        android:layout_marginTop="10dp"-->
-    <!--        app:backgroundTint="@null"-->
-    <!--        android:background="@drawable/white_rounded_button"-->
-    <!--        android:text="@string/cartOrder"-->
-    <!--        android:textColor="@color/black" />-->
-
-    <!--    <TextView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="@string/cartPayConfirm"-->
-    <!--        android:layout_marginTop="10dp"-->
-    <!--        android:gravity="center" />-->
-
-    <!--    <Button-->
-    <!--        android:id="@+id/cartPay"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="40dp"-->
-    <!--        android:layout_marginTop="10dp"-->
-    <!--        app:backgroundTint="@null"-->
-    <!--        android:background="@drawable/white_rounded_button"-->
-    <!--        android:text="@string/cartPay"-->
-    <!--        android:textColor="@color/black" />-->
-
-
-
 </LinearLayout>
