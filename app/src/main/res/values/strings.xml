@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">COMFFEE</string>
+
+    <string name="welcome">Selamat Datang di Aplikasi COMFFEE</string>
+
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="address">Address</string>
+
+    <string name="blm_akun">Belum punya akun? Register disini</string>
+    <string name="pny_akun">Sudah punya akun? Login disini</string>
+
+    <string name="profile">Profile</string>
+    <string name="history">History</string>
+    <string name="order">Order</string>
+    <string name="chk_data">Data sudah benar</string>
+    <string name="logout">Logout</string>
+
+    <string name="date">Date</string>
+    <string name="name">Name</string>
+    <string name="status">Status</string>
+    <string name="harga">Harga</string>
+
+    <string name="edit">Edit</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="passLama">Password Lama</string>
+    <string name="passBaru">Password Baru</string>
+</resources>
